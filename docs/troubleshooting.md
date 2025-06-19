@@ -88,7 +88,7 @@ instead of 2.5 or 100 Mbps instead of 1 Gbps. (A technically more advanced
 solution would be to configure traffic shaping rules at the OS-level, so that
 only Sunshine's traffic is slowed down.) 
 
-Such a solution could look like that:
+Such a solution on Linux could look like that:
 ```
 # 1) Remove existing qdisc (pfifo_fast)
 sudo tc qdisc del dev <NIC> root
